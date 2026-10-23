@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form | FUNAAB COLCOMPS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <img class="site-header__logo" src="images/funaab-logo.png" alt="Federal University of Agriculture, Abeokuta crest" width="112" height="83">
+        <p class="site-header__university">Federal University of Agriculture, Abeokuta</p>
+        <p class="site-header__college">College of Computing Sciences (COLCOMPS)</p>
+    </header>
+
+    <main class="page">
+        <section class="registration" aria-labelledby="registration-title">
+            <h1 class="registration__title" id="registration-title">Student Registration Form</h1>
+            <p class="registration__note">Fields marked with an asterisk are required.</p>
+
+            <form class="registration__form" action="#" method="post">
+                <p class="field">
+                    <label for="full-name">Full Name <span class="field__required" aria-hidden="true">*</span></label>
+                    <input type="text" id="full-name" name="full_name" placeholder="Enter your full name" autocomplete="name" required>
+                </p>
+
+                <p class="field">
+                    <label for="matric-number">Matric Number <span class="field__required" aria-hidden="true">*</span></label>
+                    <input type="text" id="matric-number" name="matric_number" placeholder="Enter your matric number" autocomplete="off" required>
+                </p>
+
+                <p class="field">
+                    <label for="department">Department <span class="field__required" aria-hidden="true">*</span></label>
+                    <select id="department" name="department" required>
+                        <option value="" selected disabled>Select your department</option>
+                        <option value="Information and Communication Technology">Information and Communication Technology</option>
+                        <option value="Cyber Security">Cyber Security</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="Information Technology">Information Technology</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Information System">Information System</option>
+                        <option value="Software Engineering">Software Engineering</option>
+                    </select>
+                </p>
+
+                <p class="field">
+                    <label for="email">Email Address <span class="field__required" aria-hidden="true">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="name@example.com" autocomplete="email" required>
+                </p>
+
+                <p class="field">
+                    <label for="phone">Phone Number <span class="field__required" aria-hidden="true">*</span></label>
+                    <input type="tel" id="phone" name="phone" placeholder="08012345678 or +2348012345678" autocomplete="tel" inputmode="tel" pattern="(\+234|234|0)[0-9]{10}" title="Enter a Nigerian phone number, for example 08012345678 or +2348012345678" required>
+                </p>
+
+                <fieldset class="field field--choice">
+                    <legend>Gender <span class="field__required" aria-hidden="true">*</span></legend>
+                    <span class="choice-list">
+                        <span class="choice">
+                            <input type="radio" id="gender-male" name="gender" value="Male" required>
+                            <label for="gender-male">Male</label>
+                        </span>
+                        <span class="choice">
+                            <input type="radio" id="gender-female" name="gender" value="Female" required>
+                            <label for="gender-female">Female</label>
+                        </span>
+                    </span>
+                </fieldset>
+
+                <p class="field">
+                    <label for="programme">Programme <span class="field__required" aria-hidden="true">*</span></label>
+                    <select id="programme" name="programme" required>
+                        <option value="" selected disabled>Select your programme</option>
+                        <option value="Full-Time (Weekdays)">Full-Time (Weekdays)</option>
+                        <option value="Part-Time (Weekends)">Part-Time (Weekends)</option>
+                    </select>
+                </p>
+
+                <button class="registration__submit" type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p class="site-footer__name">Federal University of Agriculture, Abeokuta</p>
+        <p class="site-footer__college">College of Computing Sciences (COLCOMPS)</p>
+    </footer>
+</body>
+</html>
